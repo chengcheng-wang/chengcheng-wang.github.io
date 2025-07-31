@@ -223,12 +223,6 @@ Add Google Analytics by including the tracking code in the `<head>` section of `
 
 ## 📝 Content Tips
 
-### Writing About Your Research:
-- Use clear, accessible language
-- Include keywords relevant to your field
-- Keep descriptions concise but informative
-- Update regularly with new achievements
-
 ### Publication Formatting:
 - Follow standard academic citation format
 - Include DOI links when available
@@ -243,12 +237,6 @@ This website template is open for improvements. If you have suggestions or find 
 
 This template is free to use for academic and personal purposes. No attribution required, but appreciated.
 
-## 📞 Support
-
-If you need help customizing this website, you can:
-1. Check the inline comments in the HTML/CSS files
-2. Search for web development tutorials
-3. Consult with web development communities
 
 ---
 

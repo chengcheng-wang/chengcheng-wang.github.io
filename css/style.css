@@ -1,0 +1,433 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+    padding: 40px 0;
+    border-bottom: 1px solid #1e3a8a;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.affiliation {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #1e3a8a;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.contact-link i {
+    font-size: 1rem;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1e3a8a;
+    position: relative;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #34495e;
+    margin: 25px 0 15px 0;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Research section */
+.research-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.research-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.research-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.interests-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.interests-list li {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #1e3a8a;
+    font-weight: 500;
+}
+
+/* Publications section */
+.publication-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1e3a8a;
+}
+
+.publication-item p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* Education section */
+.education-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1e3a8a;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Experience section */
+.experience-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1e3a8a;
+}
+
+.experience-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #1e3a8a;
+}
+
+.experience-org {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.experience-date {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Awards section */
+.awards-list {
+    list-style: none;
+}
+
+.awards-list li {
+    margin-bottom: 12px;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #1e3a8a;
+    position: relative;
+}
+
+.awards-list li::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #1e3a8a;
+    border-radius: 50%;
+}
+
+/* Teaching section */
+.teaching-list {
+    list-style: none;
+}
+
+.teaching-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.teaching-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+/* CV section */
+.cv-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 2px dashed #1e3a8a;
+}
+
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: #1e3a8a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+/* Footer styles */
+.footer {
+    border-top: 1px solid #1e3a8a;
+    padding: 30px 0;
+    margin-top: 50px;
+    background-color: #f8f9fa;
+}
+
+.footer-content {
+    text-align: center;
+    color: #777;
+}
+
+.footer-content p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .contact-links {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .interests-list {
+        grid-template-columns: 1fr;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .education-item,
+    .experience-item,
+    .publication-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 0;
+    }
+    
+    .main-content {
+        padding: 20px 0;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .contact-link {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+/* Animation for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover effects for sections */
+.education-item:hover,
+.experience-item:hover,
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+.contact-link:focus,
+.cv-link:focus {
+    outline: 2px solid #1e3a8a;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .contact-links,
+    .footer {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    section {
+        margin-bottom: 20pt;
+        break-inside: avoid;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
